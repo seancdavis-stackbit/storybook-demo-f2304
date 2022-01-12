@@ -5,7 +5,7 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: 'Love your work. Work loves you.'
+    title: Love your work. Work loves you.
     subtitle: 'One platform, one community.'
     actions:
       - type: Button
@@ -48,6 +48,53 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
+  - colors: colors-a
+    elementId: ''
+    title: Gallery
+    subtitle: This is the subtitle
+    images:
+      - type: ImageBlock
+        url: 'https://assets.stackbit.com/components/images/default/image-1.jpeg'
+        altText: Image one
+        caption: Image one caption
+      - type: ImageBlock
+        url: 'https://assets.stackbit.com/components/images/default/image-2.jpeg'
+        altText: Image two
+        caption: Image two caption
+      - type: ImageBlock
+        url: 'https://assets.stackbit.com/components/images/default/image-3.jpeg'
+        altText: Image three
+        caption: Image three caption
+      - type: ImageBlock
+        url: 'https://assets.stackbit.com/components/images/default/image-4.jpeg'
+        altText: Image four
+        caption: Image four caption
+    spacing: 1
+    columns: 4
+    aspectRatio: '16:9'
+    imageSizePx: 300
+    showCaption: true
+    enableHover: true
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
+        justifyContent: center
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+    type: MediaGallerySection
   - elementId: ''
     colors: colors-f
     backgroundSize: inset
@@ -143,7 +190,7 @@ sections:
         caption: ZCOOL
     spacing: 3
     columns: 7
-    aspectRatio: 'auto'
+    aspectRatio: auto
     showCaption: false
     enableHover: false
     styles:
@@ -378,12 +425,13 @@ sections:
   - elementId: ''
     colors: colors-a
     variant: variant-b
-    title: We sometimes write things. You should read it, it might shed some
-      light on why we’re doing what we’re doing
+    title: >-
+      We sometimes write things. You should read it, it might shed some light on
+      why we’re doing what we’re doing
     actions:
       - type: Link
         label: See all posts
-        url: '/blog'
+        url: /blog
         showIcon: true
         icon: arrowRight
     posts:
